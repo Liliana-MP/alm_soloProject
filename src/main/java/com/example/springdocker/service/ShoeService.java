@@ -1,6 +1,5 @@
 package com.example.springdocker.service;
 
-import com.example.springdocker.model.Food;
 import com.example.springdocker.model.Shoe;
 import com.example.springdocker.repository.ShoeRepository;
 import lombok.RequiredArgsConstructor;
