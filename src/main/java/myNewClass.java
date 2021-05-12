@@ -1,3 +1,3 @@
 public class myNewClass {
-    private String name;
+    private String firstName;
 }
