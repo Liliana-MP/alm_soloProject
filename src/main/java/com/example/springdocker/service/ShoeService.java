@@ -18,8 +18,8 @@ public class ShoeService {
         return shoeRepository.findAll();
     }
 
-    public void saveNewShoe(Shoe shoe) {
-        shoeRepository.save(shoe);
+    public Shoe saveNewShoe(Shoe shoe) {
+        return shoeRepository.save(shoe);
     }
 
     public List<String> getWearableShoes() {
