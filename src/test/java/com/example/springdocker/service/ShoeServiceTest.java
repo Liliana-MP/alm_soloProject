@@ -64,17 +64,4 @@ class ShoeServiceTest {
 
     }
 
-    @Test
-    void saveInvalid() {
-    }
-
-    @Test
-    void saveExisting() {
-    }
-
-
-
-    @Test
-    void getWearableShoes() {
-    }
 }
