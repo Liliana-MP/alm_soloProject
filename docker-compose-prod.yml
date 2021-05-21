@@ -8,10 +8,21 @@ services:
     volumes:
       - /data/db
 
-
   mongo-express:
     image: mongo-express
     ports:
       - 8081:8081
+    depends_on:
+      - mongo
+
+  java-app:
+    image: prod-image
+    ports:
+    - 8080:8080
+    environment:
+      DB_HOST: mongo
+      DB_PORT: 27017
+      DB_NAME: db-prod
+      SPRING_PROFILES_ACTIVE: prod
     depends_on:
       - mongo
